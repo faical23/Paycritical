@@ -1,0 +1,156 @@
+////// page contact
+.contact-page{
+    margin-top: 76px;
+    background-color: $color_11;
+    height :1300px;
+    .titre,.semi-body{
+        font-weight: 600;
+        font-style: normal;
+    }
+    .titre{
+        font-family: 'Raleway-SemiBold';
+        color:$color_1;
+    }
+    .content{
+        font-family: 'Montserrat-Regular';
+        font-style: normal;
+        font-weight: normal;
+        color:$color_4;
+    }
+    .semi-body{
+        font-family: 'Montserrat-SemiBold';
+    }
+    .btn-send{
+        font-style: normal;
+        font-weight:bold;
+        font-family: 'Montserrat-Bold';
+    }
+    .contact-us{
+        display: flex;
+        margin-left:110px;
+        padding-top:56px ;
+        img{
+            width:46px;
+            height:61px;
+            margin-top :6px;
+        }
+        h2{
+            @extend .titre;
+            font-size: 36px;
+        }
+        p{
+            @extend .content;
+            font-size: 18px;
+        }
+        .centent{
+            margin-left:10px
+        }
+    }
+
+
+    //// les cards
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        padding:70px 110px;
+        .card-item{
+            width:350px;
+            height:220px;
+            box-shadow: 0px 2px 3Px rgba(0,0,0,0.02);
+            background-color: $color_2;
+
+        }
+        .contunu-card{
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+        h2{
+            @extend .titre;
+            font-size: 24px;
+            margin-top: 5px;
+            line-height: 50px;
+        }
+        p{
+            @extend .content;
+            font-size: 16px;
+            line-height: 14px;
+
+        }
+        h3{
+            @extend .semi-body;
+            font-size: 16px;
+            color:$color_8;
+        }
+        img{
+            width:53px;
+            height:53px;
+        }
+
+    }
+    ////part message
+    .part-message{
+        display: flex;
+        //// image map
+        img{
+            width:623px;
+            height:667px;
+            margin-left: 30px;
+        }
+        //// template message
+        .template-message{
+            background-color: $color_2;
+            width:476px;
+            height:667px;
+            margin-left: 110px;
+            .all-input{
+                margin-left: 66px;
+            }
+            h1{
+                @extend .titre;
+                font-size: 24;
+                text-align: center;
+                margin-top: 40px;
+            }
+            h3{
+                @extend .semi-body;
+                font-size: 16px;
+                line-height: 25px;
+                margin-top: 20px;
+            }
+            ::placeholder,textarea{
+                @extend .content;
+                font-size: 16px;
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+            input,button,textarea{
+                border:none;
+                border-radius: 5px;
+                border: 1px solid $color_10;    
+            }
+            input[type="text"]
+            ,input[type="email"]
+            ,input[type="text"]{
+                width:342;
+                height: 46px;
+            }
+            textarea{
+                width:342px;
+                height:137px;
+            }
+            button{
+                margin-top: 40px;
+                width:342px;
+                height:42px;
+                background-color: $color_3;
+                @extend .btn-send;
+                color:$color_2;
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: $color_1;
+            }
+        }
+
+    }
+}

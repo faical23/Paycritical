@@ -1,0 +1,147 @@
+///// strat post page
+
+.post{
+    margin-top: 76px;
+    .title,.mini-titre{
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+    }
+    .title{
+        font-family: 'Raleway-SemiBold';
+    }
+    .mini-titre{
+        font-family: 'Montserrat-SemiBold';
+    }
+    .parag{
+        font-style: normal;
+        font-weight: normal;
+        font-family: 'Montserrat-Regular';
+    }
+    .grand-title{
+        .under-line{
+            @extend .title;
+            font-size: 36px;
+            color:$color_1;
+            top: 76px;
+        }
+        h1{
+            text-align: center;
+            line-height: 34px;
+        }
+        .under-line{
+            position: relative;
+        }
+        .under-line::after{
+            content: "";
+            height: 2px;
+            width:60px;
+            background-color: $color_11;
+            position: absolute;
+            left: 47.8%;
+            border: 0px;
+            top:100px;
+    }
+    }
+
+    .date{
+        p{
+            @extend .parag;
+            font-size: 12px;
+            color:$color_1;
+            text-align: center;
+            margin-top: 90px;
+        }
+
+    }
+    .post-img{
+        width:1160px;
+        height:482px;
+       margin-left: 7.6%;
+    }
+    .post-paraghraphe{
+        display: flex;
+        margin-top:30px;
+        .socials{  
+            margin-left: 100px;
+            .sticky-social{
+                position: sticky;
+                top: 100px;
+            }
+            a{
+                text-decoration: none;
+               
+            }
+            P{
+                font-size: 16px;
+                color:$color_1;
+
+            }
+            .social-media{
+                i{
+                    color: $color_1;
+                    font-size: 22px;
+                    line-height: 35px;
+                    margin-left: 12px;
+
+                }
+            }
+            i:hover,a p:hover{
+                color:$color_3;
+            }
+        }
+        .para-under-pic{
+            width:700px;
+            margin-left: 200px;
+            p{
+                @extend .parag;
+                font-size:17px;
+                line-height: 1.7em;
+                color:$color_5;
+            }
+        }
+    }
+    .post-auther-name{
+        margin-top: 80px;
+        img{
+            width:56px;
+            height:56px;
+            margin-left: 48%;
+        }
+        h2{
+            @extend .mini-titre;
+            font-size: 16px;
+        }
+        p{
+            @extend .parag;
+            font-size: 14px;
+            text-align: center;
+            line-height: 3px;
+           color:$color_4;
+        }
+        .contunu-after-auther{
+            margin-top:15px
+        }
+        .para-auther-name{
+            margin-top: 20px;
+        }
+    }
+    .post-cards{
+        background-color: $color_7;
+        margin-top: 50px;
+        .title-cards{
+            h2{
+                @extend .title;
+                font-size:24px ;
+                padding-top:100px ;
+            }
+        }
+
+    }
+    .blog-card{
+        background-color: $color_7;
+        height:600px;
+        margin-top:50px;
+    }
+}
+///// end post page

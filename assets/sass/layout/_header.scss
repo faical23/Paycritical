@@ -1,0 +1,62 @@
+////header
+header{
+
+
+    font-family: 'Montserrat-Medium';
+    .fixed-top{
+        background-color: $color_11;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+    }
+    .navbar-brand{
+        width:103.49;
+    }
+    .navbar{
+        height:74px;
+        padding: 0rem 9rem;
+    }
+    .collapse{
+        margin-left: 60px;
+    }
+    .active a{
+        font-weight: bolder;
+    }
+    .navbar-nav li{
+        margin-left:10px;
+    }
+    .navbar-nav .nav-item .nav-link:hover,
+    .dropdown .nav-link:hover{
+        color:$color_3;
+    }
+    ul li a,.btn{
+        font-size: 16px;
+    }
+    .dropdown .nav-link {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    .dropdown ,.form-inline a{
+        text-decoration: none;
+    }
+    .dropdown .nav-link,.form-inline button a{
+        color:$color_1;
+    }
+
+    button{
+        border:none;
+        width:150px;
+        height:44px;
+        border-radius: 5px;
+        border:1px solid $color_1;
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 16px;
+        font-family: 'Montserrat-Medium';
+    }
+    button:hover a{
+        color:$color_2;
+    }
+    button:hover{
+        //color:$color_2;
+        background-color: $color_1;
+    }
+}

@@ -1,0 +1,64 @@
+///// start footer
+footer{
+    background-color: $color_9;
+    height:360px;
+    .part-footer{
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding:70px 80px;
+    }
+
+
+    h3{
+        font-family: 'Montserrat-Bold';
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        color: $color_2;
+        margin-top:12px;
+    }
+    p{
+        font-family: 'Montserrat-Regular';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        color:$color_2;
+    }
+    .paraghraphe{
+        line-height: 5px;
+    }
+  
+    .text-footer-adress,.link{
+        margin-top: 5px;
+    }
+    .dropdown{
+        margin-top: 25px;
+    }
+    .company a,.contact a{
+        text-decoration: none;
+    }
+    .company a p:hover,
+    .contcat a:hover,
+    .nav-link:hover,
+    .contact a p:hover{
+        color:$color_3;
+    }
+    img{
+        margin:3px ;
+    }
+    .nav-link{
+        color:$color_2;
+    }
+    .logo .under-line{
+        border-bottom: 2px solid rgba(255,255,255,0.3);
+        width :80px;
+    }
+    .part-droit{
+        p{
+            text-align: center;
+        }
+    }
+
+}
+///// end footer

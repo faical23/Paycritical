@@ -1,0 +1,404 @@
+.landing-page{
+
+.title-bold,.title-mon-bold{
+    font-weight: bold;
+    font-style: normal;
+}
+.title-bold{
+    font-family: 'Raleway-Bold';
+}
+.title-mon-bold{
+    font-family: 'Montserrat-Bold';
+}
+.title-mon-semibold{
+    font-weight: 600px;
+    font-style: normal;
+    font-family: 'Montserrat-SemiBold';
+}
+.para-regular{
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Montserrat-Regular';
+    color:$color_4;
+}
+.line-before{
+    margin :0px auto 15px;
+    max-width: 600px;
+    position: relative;
+    color:$color_5;
+
+}
+.line-before:before{
+    content: "";
+    width:34px;
+    height: 4px;
+    background-color: $color_3;
+    position: absolute;
+    left: 0px;
+    right: 100px;
+    top: 117%;
+}
+.t1{
+    margin-left: 50px;
+}
+//// start hero section
+.hero{
+    height:650px;
+    margin-top: 77px;
+    display: flex;
+    .text-1{
+        position: relative;
+        left:120px;
+        top:140px;
+    }
+
+    h1{
+        @extend .title-bold;
+        position: relative;
+        top: 15px;
+        font-size: 48px;
+    }
+    p{
+        @extend .para-regular;
+        line-height: 15px;
+        font-size: 18px;
+    }
+    button{
+        border:none;
+        width: 290px;
+        height:42px;
+        font-size: 16px;
+        background-color: $color_3;
+        color:$color_2;
+        font-family: 'Montserrat-Bold';
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    button:hover{
+        background-color: $color_1;
+    }
+    img{
+        position: relative;
+        width:569px;
+        height:414px;
+        top:67px;
+        left:180px;
+    }
+}
+//// end hero section
+/// start feautues1
+.feautues1{
+    height:750px;
+    
+    h1{
+        @extend .title-bold;
+        font-size: 24px;
+        height:30px;
+    }
+    p{
+        @extend .para-regular;
+        font-size: 16px;
+        line-height: 7px;
+    }
+    .part-1{
+        h2,p{
+            text-align: center;
+        }
+        h2{
+            @extend .title-bold;
+            font-size: 30px;
+            color: $color_1;
+            height:52px
+        }
+        p{
+
+            @extend .para-regular;
+            font-size: 16px;
+            line-height: 7px;
+            color: $color_5;
+        }
+    }
+    .part-2{
+        display:flex;
+        margin-top: 150px;
+    .text-2{
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+    .line-before:before{
+        top: 37%;
+    }
+    h2{
+        color: $color_4;
+        @extend .title-mon-bold;
+        font-size: 16px;
+        line-height: 7px;
+        height: 20px;
+        margin-left: 50px;
+    }
+
+    p{
+        margin-left: 50px;
+    }
+    img{
+        width:540px;
+        height:433.86px;
+        margin-left: 170px;
+    }
+
+
+}
+
+}
+
+///// end feautures1
+////// start feautures 2
+
+.feutures2{
+    display: flex;
+    height:580px;
+    padding-top: 60px;
+    h1{
+        @extend .title-bold;
+        font-size: 24px;
+        height:10px;
+    }
+    p{
+      @extend .para-regular;
+        font-size: 16px;
+        line-height: 7px;
+    }
+    .text-3{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .line2-h1-ft2{
+        margin-left: 50px;
+    }
+    .line-before:before{
+        top: 117%;
+    }
+    p{
+        margin-left: 50px;
+    }
+    .paraghraphe-ft2{
+        margin-top: 40px;
+    }
+    img{
+        width:528px;
+        height:384.86px;
+        margin-left: 120.76px;
+    }
+
+}
+///// end feautures 2
+////// start feautures 3
+.feutures3{
+    display: flex;
+    height:520px;
+    h1{
+        @extend .title-bold;
+        font-size: 24px;
+        height:10px;
+    }
+    p{
+        @extend .para-regular;
+        font-size: 16px;
+        line-height: 7px;
+        margin-left: 50px;
+    }
+    ul{
+        margin-top:25px ;
+    }
+    li{
+        @extend .para-regular;
+        font-size: 16px;
+        margin-left: 26px;
+    }
+    .text-4{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .line2-h1-ft2{
+        margin-left: 50px;
+    }
+    h2{
+        @extend .title-mon-bold;
+        color: $color_4;
+        font-size: 16px;
+        line-height: 7px;
+        height: 20px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    img{
+        width:540px;
+        height:318px;
+        margin-left: 150px;
+        margin-top:50px;
+    }
+}
+
+///// end feautures 3
+////// start global green card
+.global-green-card{
+    background-color: $color_6;
+    height:499px;
+    width:1160;
+    align-items: center;
+    margin-left: 7%;
+    .mini-card-green{
+        display: flex;
+        margin-left: 220px;
+    }
+    .card1-green{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin:15px;
+        width: 310px;
+        height:110px;
+        align-items: center;
+
+    }
+
+    img{
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .green-icon1{
+        width:27px;
+        height:21px;
+    }
+    .green-icon2{
+        width:25px;
+        height:25px;
+    }
+    .green-icon3{
+        width:22px;
+        height:21px;
+    }
+    .green-icon4{
+        width:25px;
+        height:26px;
+    }
+    h2{
+        @extend .title-bold;
+        font-size: 30px;
+        text-align: center;
+        color: $color_2;
+    }
+    h4{
+        @extend .title-mon-semibold;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 9px;
+        line-height: 10px;
+        color: $color_2;
+    }
+    .card-icons{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .contunu-green{
+        padding-top: 60px;
+    }
+}
+
+///////end green card
+/////// start global card white
+.global-card-white{
+    height:500px;
+    h1{
+        @extend .title-bold;
+        font-size: 30px;
+        text-align: center;
+        margin-top:80px;
+        line-height: 60px;
+    }
+    p{
+            @extend .para-regular;
+            font-size: 16px;
+            line-height: 7px;
+            text-align: center;
+    }
+    .all-mini-white{
+        display: flex;
+        margin-left: 55px;
+    }
+    .card-white{
+        background-color: $color_7;
+        height:227px;
+        width:258px;
+        align-items: center;
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    img{
+        margin-top:50px;
+    }
+    .card1{
+        width:156px;
+        height:76px;
+    }
+    .card2{
+        width:94px;
+        height:91px;
+    }
+    .card3{
+        width:92px;
+        height:91px;
+    }
+    .card4{
+        width:124px;
+        height:76px;
+    }
+    h3{
+        @extend .title-mon-bold;
+        text-align: center;
+        font-size: 18px;
+    }
+    .text-cashback,.text-layolty{
+        margin-top: 20px;
+    }
+    .text-meal,.text-gift{
+        margin-top: 32px;
+    }
+
+}
+
+//////start partners
+.partners{
+    height:270px;
+    h1{
+        @extend .title-bold;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .under-line{
+        display: inline-block;
+        position: relative;
+    }
+    .under-line::after{
+        content: "";
+        height: 4px;
+        width:111px;
+        background-color: $color_3;
+        position: absolute;
+        left :38px;
+        border: 0px;
+        top:55px
+    }
+    .parteners-title{
+        text-align: center;
+    }
+    img{
+        margin-left: 7%;
+        margin-top:30Px ;
+        width:1155px;
+        height:44px
+
+    }
+}
+////// end partners
+}

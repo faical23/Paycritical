@@ -1,0 +1,169 @@
+
+
+
+//// start blog card
+.blog-card{
+    height: 800px;
+    background-color: $color_7;
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    html {
+      background-color: #ecf9ff;
+    }
+    
+    
+    
+    .main{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    
+    
+    img {
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    //// for zooom image card if hover
+    .inner{
+      overflow: hidden;
+    }
+    .inner img{
+      transition: all 1.4s ease;
+    }
+    .inner img:hover{
+      transform: scale(1.2);
+    }
+    ///// end zoom image card if hover
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+      margin-right: 23px;
+    }
+    
+    @media (min-width: 40rem) {
+      .cards_item {
+        width: 50%;
+      }
+    }
+    
+    @media (min-width: 56rem) {
+      .cards_item {
+        width: 367px;
+        margin-left:10px;
+      }
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .card:hover{
+        box-shadow:0 8px 6px 0 rgba(0, 0, 0, 0.02);
+    }
+    
+    .card_content {
+      padding: 1rem;
+      background:$color_2;
+      height :252px;
+    }
+    
+    .card_title {
+      color: black;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+    }
+    
+    .card_text {
+      color: black;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;    
+      font-weight: 400;
+    }
+    .made_by{
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 35px;
+      text-align: center;
+    }
+    h2  {
+        font-size: 17px;
+        font-family: 'Montserrat-SemiBold';
+        font-weight: 600;
+        font-style: normal;
+        margin-left: 8px;  
+    }
+    .title-card:hover{
+        color:$color_8;
+    }
+    .CONTINUE,.CONTINUE-first-card{
+        font-size:15px ;
+        margin-top: 50px;
+        color:$color_8;
+    }
+    .card_content a{
+        text-decoration: none;
+        color:$color_1;
+    }
+    .card_content a .CONTINUE:hover,
+    .card_content a .CONTINUE-first-card:hover{
+        color:$color_1;
+    }
+    
+    
+    
+    .CONTINUE-first-card{
+        margin-top: 77px;
+    }
+    p{
+        font-family: 'Montserrat-Regular';
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 12px;   
+        margin-left: 8px;  
+    }
+    .paraghraphe-cards{
+        margin-top: 20px;
+    }
+    h1{
+        padding-top: 100px;
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Raleway-SemiBold';
+        text-align: center;
+    }
+    p{
+            font-family: 'Montserrat-Regular';
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 12px;   
+            text-align: center;
+    }
+    .blog-paraghraphe{
+        margin-top: 30px;
+    }
+}
